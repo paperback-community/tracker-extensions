@@ -1,0 +1,48 @@
+{
+  "name": "extension-templates",
+  "description": "Extension templates repository for Paperback.",
+  "author": "Paperback Community",
+  "keywords": [
+    "Paperback",
+    "extensions",
+    "templates"
+  ],
+  "version": "0.9.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paperback-community/extension-templates.git"
+  },
+  "bugs": {
+    "url": "https://github.com/paperback-community/extension-templates/issues"
+  },
+  "homepage": "https://github.com/paperback-community/extension-templates#readme",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "eslint-check": "eslint",
+    "eslint-write": "eslint --fix",
+    "prettier-check": "prettier --check '**/*{.md,.yaml,.json,.js,.ts}'",
+    "prettier-write": "prettier --write '**/*{.md,.yaml,.json,.js,.ts}'",
+    "bundle": "paperback-cli bundle",
+    "serve": "paperback-cli serve",
+    "logcat": "paperback-cli logcat",
+    "nodemon": "nodemon -w \"./src/**/*.ts\" -e \"ts\" -x \"npm run serve\"",
+    "test": "tsc --noEmit && npm run eslint-check && npm run prettier-check && npm run bundle",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.15.0",
+    "@ianvs/prettier-plugin-sort-imports": "^4.4.0",
+    "@paperback/toolchain": "^1.0.0-alpha.28",
+    "@paperback/types": "^1.0.0-alpha.28",
+    "@types/eslint": "^9.6.1",
+    "@types/eslint__js": "^8.42.3",
+    "eslint": "9.14.0",
+    "husky": "^9.1.6",
+    "nodemon": "^3.1.7",
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.14.0"
+  }
+}
