@@ -2785,260 +2785,139 @@ var source = (() => {
     }
   });
 
-  // src/ContentTemplate/main.ts
+  // src/AniList/main.ts
   var main_exports = {};
   __export(main_exports, {
-    ContentTemplate: () => ContentTemplate,
-    ContentTemplateExtension: () => ContentTemplateExtension
+    AniList: () => AniList,
+    AniListExtension: () => AniListExtension
   });
   init_buffer();
   var import_types2 = __toESM(require_lib(), 1);
 
-  // content.json
-  var content_default = [
-    {
-      titleId: "1",
-      primaryTitle: "\u307E\u3060\u307E\u3060\u9060\u3044",
-      secondaryTitles: ["Still a long way to go"],
-      thumbnailUrl: "https://pbs.twimg.com/media/GaXR8OhaoAAubuJ?format=jpg&name=large",
-      synopsis: "Source: https://x.com/Dsymobile4999/status/1848129570622275753",
-      contentRating: "EVERYONE",
-      status: "Finished",
-      author: "\u305F\u3073\u306F\u3071\u306E\u3089\u307E",
-      rating: 1,
-      genres: ["Art"],
-      tags: ["Anime/Manga Style", "Colored", "AI"],
-      chapters: [
-        {
-          chapterId: "1",
-          languageCode: "JP",
-          chapterNumber: 1,
-          volumeNumber: 1,
-          pages: [
-            "https://pbs.twimg.com/media/GaXR8OhaoAAubuJ?format=jpg&name=large"
-          ]
-        }
-      ]
-    },
-    {
-      titleId: "2",
-      primaryTitle: "\u660E\u65E5\u304C\u4E0D\u5B89",
-      secondaryTitles: ["I'm worried about tomorrow"],
-      thumbnailUrl: "https://pbs.twimg.com/media/GaSMt0hakAAqdeQ?format=jpg&name=large",
-      synopsis: "Source: https://x.com/Dsymobile4999/status/1847963474426728804",
-      contentRating: "EVERYONE",
-      status: "Finished",
-      author: "\u305F\u3073\u306F\u3071\u306E\u3089\u307E",
-      rating: 1,
-      genres: ["Art"],
-      tags: ["Anime/Manga Style", "Colored", "AI"],
-      chapters: [
-        {
-          chapterId: "1",
-          languageCode: "JP",
-          chapterNumber: 1,
-          volumeNumber: 1,
-          pages: [
-            "https://pbs.twimg.com/media/GaSMt0hakAAqdeQ?format=jpg&name=large"
-          ]
-        }
-      ]
-    },
-    {
-      titleId: "3",
-      primaryTitle: "\u4E18\u306E\u4E0A\u306B\u5BC4\u308A\u9053",
-      secondaryTitles: ["Detour to the top of the hill"],
-      thumbnailUrl: "https://pbs.twimg.com/media/GaSMk7LbUAAG8sF?format=jpg&name=large",
-      synopsis: "Source: https://x.com/Dsymobile4999/status/1847903076671508757",
-      contentRating: "EVERYONE",
-      status: "Finished",
-      author: "\u305F\u3073\u306F\u3071\u306E\u3089\u307E",
-      rating: 1,
-      genres: ["Art"],
-      tags: ["Anime/Manga Style", "Colored", "AI"],
-      chapters: [
-        {
-          chapterId: "1",
-          languageCode: "JP",
-          chapterNumber: 1,
-          volumeNumber: 1,
-          pages: [
-            "https://pbs.twimg.com/media/GaSMk7LbUAAG8sF?format=jpg&name=large"
-          ]
-        }
-      ]
-    },
-    {
-      titleId: "4",
-      primaryTitle: "\u6797\u6A8E\u306E\u5B63\u7BC0",
-      secondaryTitles: ["Apple Season"],
-      thumbnailUrl: "https://pbs.twimg.com/media/GaSONzVbUAEohKw?format=jpg&name=large",
-      synopsis: "Source: https://x.com/Dsymobile4999/status/1847827578427445464",
-      contentRating: "EVERYONE",
-      status: "Finished",
-      author: "\u305F\u3073\u306F\u3071\u306E\u3089\u307E",
-      rating: 1,
-      genres: ["Art"],
-      tags: ["Anime/Manga Style", "Colored", "AI"],
-      chapters: [
-        {
-          chapterId: "1",
-          languageCode: "JP",
-          chapterNumber: 1,
-          volumeNumber: 1,
-          pages: [
-            "https://pbs.twimg.com/media/GaSONzVbUAEohKw?format=jpg&name=large"
-          ]
-        }
-      ]
-    },
-    {
-      titleId: "5",
-      primaryTitle: "\u4ECA\u65E5\u306F\u6D1E\u7A9F\u63A2\u691C\u3060",
-      secondaryTitles: ["Today we're exploring caves"],
-      thumbnailUrl: "https://pbs.twimg.com/media/GaSNaI7bcAAPIIP?format=jpg&name=large",
-      synopsis: "Source: https://x.com/Dsymobile4999/status/1847767180580180139/photo/1",
-      contentRating: "EVERYONE",
-      status: "Finished",
-      author: "\u305F\u3073\u306F\u3071\u306E\u3089\u307E",
-      rating: 1,
-      genres: ["Art"],
-      tags: ["Anime/Manga Style", "Colored", "AI"],
-      chapters: [
-        {
-          chapterId: "1",
-          languageCode: "JP",
-          chapterNumber: 1,
-          volumeNumber: 1,
-          pages: [
-            "https://pbs.twimg.com/media/GaSNaI7bcAAPIIP?format=jpg&name=large"
-          ]
-        }
-      ]
-    },
-    {
-      titleId: "6",
-      primaryTitle: "\u30A2\u30DD\u30AF\u30EA\u30D5\u30A1",
-      secondaryTitles: ["Apocrypha"],
-      thumbnailUrl: "https://pbs.twimg.com/media/GaNGkYsbUAEofEf?format=jpg&name=large",
-      synopsis: "Source: https://x.com/Dsymobile4999/status/1847601088234737836",
-      contentRating: "EVERYONE",
-      status: "Finished",
-      author: "\u305F\u3073\u306F\u3071\u306E\u3089\u307E",
-      rating: 1,
-      genres: ["Art"],
-      tags: ["Anime/Manga Style", "Colored", "AI"],
-      chapters: [
-        {
-          chapterId: "1",
-          languageCode: "JP",
-          chapterNumber: 1,
-          volumeNumber: 1,
-          pages: [
-            "https://pbs.twimg.com/media/GaNGkYsbUAEofEf?format=jpg&name=large"
-          ]
-        }
-      ]
-    },
-    {
-      titleId: "7",
-      primaryTitle: "\u5915\u65E5\u306E\u4E2D\u306E\u5E30\u308A\u9053",
-      secondaryTitles: ["On the way home in the sunset"],
-      thumbnailUrl: "https://pbs.twimg.com/media/GaNHWwfbUAMbUO2?format=jpg&name=large",
-      synopsis: "Source: https://x.com/Dsymobile4999/status/1847540689074004141",
-      contentRating: "EVERYONE",
-      status: "Finished",
-      author: "\u305F\u3073\u306F\u3071\u306E\u3089\u307E",
-      rating: 1,
-      genres: ["Art"],
-      tags: ["Anime/Manga Style", "Colored", "AI"],
-      chapters: [
-        {
-          chapterId: "1",
-          languageCode: "JP",
-          chapterNumber: 1,
-          volumeNumber: 1,
-          pages: [
-            "https://pbs.twimg.com/media/GaNHWwfbUAMbUO2?format=jpg&name=large"
-          ]
-        }
-      ]
-    },
-    {
-      titleId: "8",
-      primaryTitle: "\u6E2F\u8857\u306E\u5348\u5F8C",
-      secondaryTitles: ["Afternoon in the Port City"],
-      thumbnailUrl: "https://pbs.twimg.com/media/GaNHJmFbUAEWKNr?format=jpg&name=large",
-      synopsis: "Source: https://x.com/Dsymobile4999/status/1847465191837225181/photo/1",
-      contentRating: "EVERYONE",
-      status: "Finished",
-      author: "\u305F\u3073\u306F\u3071\u306E\u3089\u307E",
-      rating: 1,
-      genres: ["Art"],
-      tags: ["Anime/Manga Style", "Colored", "AI"],
-      chapters: [
-        {
-          chapterId: "1",
-          languageCode: "JP",
-          chapterNumber: 1,
-          volumeNumber: 1,
-          pages: [
-            "https://pbs.twimg.com/media/GaNHJmFbUAEWKNr?format=jpg&name=large"
-          ]
-        }
-      ]
-    },
-    {
-      titleId: "9",
-      primaryTitle: "\u732B\u3068\u306E\u4F11\u65E5",
-      secondaryTitles: ["Holiday with cats"],
-      thumbnailUrl: "https://pbs.twimg.com/media/GaNG3tIbsAALJoF?format=jpg&name=large",
-      synopsis: "Source: https://x.com/Dsymobile4999/status/1847404792550998148",
-      contentRating: "EVERYONE",
-      status: "Finished",
-      author: "\u305F\u3073\u306F\u3071\u306E\u3089\u307E",
-      rating: 1,
-      genres: ["Art"],
-      tags: ["Anime/Manga Style", "Colored", "AI"],
-      chapters: [
-        {
-          chapterId: "1",
-          languageCode: "JP",
-          chapterNumber: 1,
-          volumeNumber: 1,
-          pages: [
-            "https://pbs.twimg.com/media/GaNG3tIbsAALJoF?format=jpg&name=large"
-          ]
-        }
-      ]
-    },
-    {
-      titleId: "10",
-      primaryTitle: "\u591C\u306E\u4E0B\u753A",
-      secondaryTitles: ["Downtown at night"],
-      thumbnailUrl: "https://pbs.twimg.com/media/GaIG4xSaAAAa681?format=jpg&name=large",
-      synopsis: "Source: https://x.com/Dsymobile4999/status/1847238700855710173",
-      contentRating: "EVERYONE",
-      status: "Finished",
-      author: "\u305F\u3073\u306F\u3071\u306E\u3089\u307E",
-      rating: 1,
-      genres: ["Art"],
-      tags: ["Anime/Manga Style", "Colored", "AI"],
-      chapters: [
-        {
-          chapterId: "1",
-          languageCode: "JP",
-          chapterNumber: 1,
-          volumeNumber: 1,
-          pages: [
-            "https://pbs.twimg.com/media/GaIG4xSaAAAa681?format=jpg&name=large"
-          ]
-        }
-      ]
+  // src/AniList/GraphQLQueries.ts
+  init_buffer();
+  var discoverSectionQuery = `
+query ($page: Int, $sort: [MediaSort], $countryOfOrigin: CountryCode
+) {
+  Page (page: $page, perPage: 50) {
+    pageInfo {
+      hasNextPage
     }
-  ];
+    media (sort: $sort, type: MANGA, countryOfOrigin: $countryOfOrigin) {
+			id
+      title {
+        english
+        native
+				userPreferred
+      }
+      coverImage {
+        large
+      }
+    }
+  }
+}
+`;
+  var MediaSort = {
+    ID: "ID",
+    ID_DESC: "ID_DESC",
+    TITLE_ROMAJI: "TITLE_ROMAJI",
+    TITLE_ROMAJI_DESC: "TITLE_ROMAJI_DESC",
+    TITLE_ENGLISH: "TITLE_ENGLISH",
+    TITLE_ENGLISH_DESC: "TITLE_ENGLISH_DESC",
+    TITLE_NATIVE: "TITLE_NATIVE",
+    TITLE_NATIVE_DESC: "TITLE_NATIVE_DESC",
+    TYPE: "TYPE",
+    TYPE_DESC: "TYPE_DESC",
+    FORMAT: "FORMAT",
+    FORMAT_DESC: "FORMAT_DESC",
+    START_DATE: "START_DATE",
+    START_DATE_DESC: "START_DATE_DESC",
+    END_DATE: "END_DATE",
+    END_DATE_DESC: "END_DATE_DESC",
+    SCORE: "SCORE",
+    SCORE_DESC: "SCORE_DESC",
+    POPULARITY: "POPULARITY",
+    POPULARITY_DESC: "POPULARITY_DESC",
+    TRENDING: "TRENDING",
+    TRENDING_DESC: "TRENDING_DESC",
+    EPISODES: "EPISODES",
+    EPISODES_DESC: "EPISODES_DESC",
+    DURATION: "DURATION",
+    DURATION_DESC: "DURATION_DESC",
+    STATUS: "STATUS",
+    STATUS_DESC: "STATUS_DESC",
+    CHAPTERS: "CHAPTERS",
+    CHAPTERS_DESC: "CHAPTERS_DESC",
+    VOLUMES: "VOLUMES",
+    VOLUMES_DESC: "VOLUMES_DESC",
+    UPDATED_AT: "UPDATED_AT",
+    UPDATED_AT_DESC: "UPDATED_AT_DESC",
+    SEARCH_MATCH: "SEARCH_MATCH",
+    FAVOURITES: "FAVOURITES",
+    FAVOURITES_DES: "FAVOURITES_DES"
+  };
+  var CountryCode = {
+    JP: "JP",
+    KR: "KR",
+    CN: "CN"
+  };
+  var searchQuery = `
+query ($page: Int, $search: String) {
+  Page (page: $page, perPage: 50) {
+    pageInfo {
+      hasNextPage
+    }
+    media (search: $search, type: MANGA, isAdult: false) {
+			id
+      title {
+				userPreferred
+        english
+        native
+      }
+      coverImage {
+        large
+      }
+    }
+  }
+}
+`;
+  var titleViewQuery = `
+query($id: Int) {
+	Media(id: $id) {
+		title {
+			english
+			native
+			romaji
+			userPreferred
+		}
+		status
+		description(asHtml: false)
+		coverImage {
+			extraLarge
+		}
+		bannerImage
+		genres
+		averageScore
+		tags {
+			id
+			name
+		}
+		staff {
+			edges {
+				node {
+					name {
+						full
+					}
+				}
+				role
+			}
+		}
+		isAdult
+	}
+}
+`;
 
-  // src/ContentTemplate/SettingsForm.ts
+  // src/AniList/SettingsForm.ts
   init_buffer();
   var import_types = __toESM(require_lib(), 1);
   var SettingsForm = class extends import_types.Form {
@@ -3119,8 +2998,9 @@ var source = (() => {
     }
   };
 
-  // src/ContentTemplate/main.ts
-  var MainInterceptor = class extends import_types2.PaperbackInterceptor {
+  // src/AniList/main.ts
+  var GRAPHQL_ENDPOINT = "https://graphql.anilist.co";
+  var AniListInterceptor = class extends import_types2.PaperbackInterceptor {
     async interceptRequest(request) {
       return request;
     }
@@ -3128,215 +3008,244 @@ var source = (() => {
       return data;
     }
   };
-  var ContentTemplateExtension = class {
-    // Implementation of the main rate limiter
+  var AniListExtension = class {
     mainRateLimiter = new import_types2.BasicRateLimiter("main", {
       numberOfRequests: 15,
       bufferInterval: 10,
       ignoreImages: true
     });
-    // Implementation of the main interceptor
-    mainInterceptor = new MainInterceptor("main");
-    // Method from the Extension interface which we implement, initializes the rate limiter, interceptor, discover sections and search filters
+    mainInterceptor = new AniListInterceptor("main");
     async initialise() {
       this.mainRateLimiter.registerInterceptor();
       this.mainInterceptor.registerInterceptor();
-      Application.registerSearchFilter({
-        id: "search-filter-template",
-        type: "dropdown",
-        options: [
-          { id: "include", value: "include" },
-          { id: "exclude", value: "exclude" }
-        ],
-        value: "Exclude",
-        title: "Search Filter Template"
-      });
     }
-    // Implements the settings form, check SettingsForm.ts for more info
     async getSettingsForm() {
       return new SettingsForm();
     }
+    async getSearchResults(query, metadata) {
+      const variables = {
+        page: metadata ?? 1,
+        search: query.title
+      };
+      return await this.getItems(
+        searchQuery,
+        variables,
+        metadata,
+        query.title
+      );
+    }
     async getDiscoverSections() {
-      const discover_section_template1 = {
-        id: "discover-section-template1",
-        title: "Discover Section Template 1",
-        subtitle: "This is a template",
+      const trending_now = {
+        id: "trending-now",
+        title: "Trending Now",
         type: import_types2.DiscoverSectionType.prominentCarousel
       };
-      const discover_section_template2 = {
-        id: "discover-section-template2",
-        title: "Discover Section Template 2",
-        subtitle: "This is another template",
+      const all_time_popular = {
+        id: "all-time-popular",
+        title: "All Time Popular",
         type: import_types2.DiscoverSectionType.simpleCarousel
       };
-      return [discover_section_template1, discover_section_template2];
+      const popular_manga = {
+        id: "popular-manga",
+        title: "Popular Manga",
+        type: import_types2.DiscoverSectionType.simpleCarousel
+      };
+      const popular_manhwa = {
+        id: "popular-manhwa",
+        title: "Popular Manhwa",
+        type: import_types2.DiscoverSectionType.simpleCarousel
+      };
+      const top_100_manga = {
+        id: "top-100-manga",
+        title: "Top 100 Manga",
+        type: import_types2.DiscoverSectionType.simpleCarousel
+      };
+      return [
+        trending_now,
+        all_time_popular,
+        popular_manga,
+        popular_manhwa,
+        top_100_manga
+      ];
     }
-    // Populates both the discover sections
     async getDiscoverSectionItems(section, metadata) {
-      let i;
-      let j;
-      let type;
+      let sort;
+      let countryOfOrigin;
       switch (section.id) {
-        case "discover-section-template1":
-          i = 0;
-          j = content_default.length / 2;
-          type = "prominentCarouselItem";
+        case "trending-now":
+          sort = MediaSort.TRENDING_DESC;
           break;
-        case "discover-section-template2":
-          i = content_default.length / 2;
-          j = content_default.length / 2;
-          type = "simpleCarouselItem";
+        case "all-time-popular":
+          sort = MediaSort.POPULARITY_DESC;
           break;
-        default:
-          i = 0;
-          j = content_default.length;
-          type = "simpleCarouselItem";
+        case "popular-manga":
+          sort = MediaSort.POPULARITY_DESC;
+          countryOfOrigin = CountryCode.JP;
+          break;
+        case "popular-manhwa":
+          sort = MediaSort.POPULARITY_DESC;
+          countryOfOrigin = CountryCode.KR;
+          break;
+        case "top-100-manga":
+          sort = MediaSort.SCORE_DESC;
           break;
       }
+      const variables = {
+        page: metadata ?? 1,
+        sort: [sort],
+        countryOfOrigin
+      };
+      return await this.getItems(discoverSectionQuery, variables, metadata, section);
+    }
+    async getItems(query, queryVariables, metadata, search) {
+      const items = [];
+      const json = await this.makeRequest(
+        query,
+        queryVariables,
+        search
+      );
+      const searchResults = json.data.Page.media;
+      for (const searchResult of searchResults) {
+        items.push({
+          mangaId: searchResult.id.toString(),
+          title: searchResult.title.userPreferred ?? searchResult.title.english ?? searchResult.title.native ?? "No Title",
+          imageUrl: searchResult.coverImage.large
+        });
+      }
+      metadata = json.data.Page.pageInfo.hasNextPage ? (metadata ?? 1) + 1 : void 0;
       return {
-        items: Array.from(Array(j)).map(() => {
-          i++;
-          return {
-            mangaId: content_default[i].titleId,
-            title: content_default[i].primaryTitle ? content_default[i].primaryTitle : "Unknown Title",
-            subtitle: content_default[i].secondaryTitles[0],
-            imageUrl: content_default[i].thumbnailUrl ? content_default[i].thumbnailUrl : "",
-            type
-          };
-        })
+        items,
+        metadata
       };
     }
-    // Populates search
-    async getSearchResults(query, metadata) {
-      const results = { items: [] };
-      for (let i = 0; i < content_default.length; i++) {
-        if (content_default[i].primaryTitle.toLowerCase().indexOf(query.title.toLowerCase()) != -1 && query.filters[0].value == "include" || content_default[i].primaryTitle.toLowerCase().indexOf(query.title.toLowerCase()) == -1 && query.filters[0].value == "exclude") {
-          if (content_default[i].titleId) {
-            const result = {
-              mangaId: content_default[i].titleId,
-              title: content_default[i].primaryTitle ? content_default[i].primaryTitle : "Unknown Title",
-              subtitle: content_default[i].secondaryTitles[0],
-              imageUrl: content_default[i].thumbnailUrl ? content_default[i].thumbnailUrl : ""
-            };
-            results.items.push(result);
-          }
-        } else {
-          for (let j = 0; j < content_default[i].secondaryTitles.length; j++) {
-            if (content_default[i].secondaryTitles[j].toLowerCase().indexOf(query.title.toLowerCase()) != -1 && query.filters[0].value == "include" || content_default[i].secondaryTitles[j].toLowerCase().indexOf(query.title.toLowerCase()) == -1 && query.filters[0].value == "exclude") {
-              if (content_default[i].titleId) {
-                const result = {
-                  mangaId: content_default[i].titleId,
-                  title: content_default[i].primaryTitle ? content_default[i].primaryTitle : "Unknown Title",
-                  subtitle: content_default[i].secondaryTitles[0],
-                  imageUrl: content_default[i].thumbnailUrl ? content_default[i].thumbnailUrl : ""
-                };
-                results.items.push(result);
-              }
-              break;
-            }
-          }
-        }
-      }
-      return results;
-    }
-    // Populates the title details
     async getMangaDetails(mangaId) {
-      for (let i = 0; i < content_default.length; i++) {
-        if (mangaId == content_default[i].titleId) {
-          let contentRating;
-          switch (content_default[i].contentRating) {
-            case "EVERYONE":
-              contentRating = import_types2.ContentRating.EVERYONE;
-              break;
-            case "MATURE":
-              contentRating = import_types2.ContentRating.MATURE;
-              break;
-            case "ADULT":
-              contentRating = import_types2.ContentRating.ADULT;
-              break;
-            default:
-              contentRating = import_types2.ContentRating.EVERYONE;
-              break;
-          }
-          const genres = { id: "genres", title: "Genres", tags: [] };
-          for (let j = 0; j < content_default[i].genres.length; j++) {
-            const genre = {
-              id: content_default[i].genres[j].toLowerCase().replace(" ", "-"),
-              title: content_default[i].genres[j]
-            };
-            genres.tags.push(genre);
-          }
-          const tags = { id: "tags", title: "Tags", tags: [] };
-          for (let j = 0; j < content_default[i].tags.length; j++) {
-            const tag = {
-              id: content_default[i].tags[j].toLowerCase().replace(" ", "-"),
-              title: content_default[i].tags[j]
-            };
-            tags.tags.push(tag);
-          }
-          return {
-            mangaId,
-            mangaInfo: {
-              thumbnailUrl: content_default[i].thumbnailUrl ? content_default[i].thumbnailUrl : "",
-              synopsis: content_default[i].synopsis ? content_default[i].synopsis : "No synopsis.",
-              primaryTitle: content_default[i].primaryTitle ? content_default[i].primaryTitle : "Unknown Title",
-              secondaryTitles: content_default[i].secondaryTitles ? content_default[i].secondaryTitles : [],
-              contentRating,
-              status: content_default[i].status,
-              author: content_default[i].author,
-              rating: content_default[i].rating,
-              tagGroups: [genres, tags],
-              artworkUrls: [content_default[i].thumbnailUrl]
-            }
-          };
-        }
+      const variables = {
+        id: +mangaId
+      };
+      const json = await this.makeRequest(
+        titleViewQuery,
+        variables
+      );
+      const mangaDetails = json.data.Media;
+      const thumbnailUrl = mangaDetails.coverImage.extraLarge;
+      const synopsis = mangaDetails.description ? mangaDetails.description.replace(/<br>|<i>|<\/i>|<a.*?>|<\/a>/g, "") : "No description";
+      const secondaryTitles = [
+        mangaDetails.title.romaji ?? "No Romaji Title",
+        mangaDetails.title.english ?? "No English Title",
+        mangaDetails.title.native ?? "No Native Title"
+      ];
+      const primaryTitle = mangaDetails.title.userPreferred ?? secondaryTitles.find((e) => e !== void 0) ?? "No Title";
+      let status;
+      switch (mangaDetails.status) {
+        case "FINISHED":
+          status = "Finished";
+          break;
+        case "NOT_YET_RELEASING":
+          status = "Not Yet Released";
+          break;
+        case "CANCELLED":
+          status = "Canceled";
+          break;
+        case "HIATUS":
+          status = "Hiatus";
+          break;
+        default:
+          status = "Releasing";
       }
-      throw new Error("No title with this id exists");
+      let author;
+      let artist;
+      let exitLoop;
+      for (const staff of mangaDetails.staff.edges) {
+        switch (staff.role) {
+          case staff.role.startsWith("Story & Art"):
+            artist = void 0;
+            exitLoop = true;
+          case (staff.role.startsWith("Story") && !author):
+          case (staff.role.startsWith("Original Story") && !author):
+            author = staff.node.name.full;
+            break;
+          case staff.role.startsWith("Art"):
+            artist = staff.node.name.full;
+            break;
+          default:
+            break;
+        }
+        if (author && artist || exitLoop)
+          break;
+      }
+      const bannerUrl = mangaDetails.bannerImage;
+      const rating = mangaDetails.averageScore ? mangaDetails.averageScore / 100 : void 0;
+      const genres = [];
+      for (const genre of mangaDetails.genres) {
+        genres.push({
+          id: genre.replace(" ", "-").toLowerCase(),
+          title: genre
+        });
+      }
+      const tags = [];
+      for (const tag of mangaDetails.tags) {
+        genres.push({
+          id: tag.id.toString(),
+          title: tag.name
+        });
+      }
+      const tagGroups = [
+        { id: "genres", title: "Genres", tags: genres },
+        { id: "tags", title: "Tags", tags }
+      ];
+      const contentRating = mangaDetails.isAdult ? import_types2.ContentRating.ADULT : genres.some((e) => e.id === "ecchi") ? import_types2.ContentRating.MATURE : import_types2.ContentRating.EVERYONE;
+      const artworkUrls = [thumbnailUrl];
+      return {
+        mangaId,
+        mangaInfo: {
+          thumbnailUrl,
+          synopsis,
+          primaryTitle,
+          secondaryTitles,
+          contentRating,
+          status,
+          artist,
+          author,
+          bannerUrl,
+          rating,
+          tagGroups,
+          artworkUrls
+        }
+      };
     }
-    // Populates the chapter list
-    async getChapters(sourceManga, sinceDate) {
-      for (let i = 0; i < content_default.length; i++) {
-        if (sourceManga.mangaId == content_default[i].titleId) {
-          const chapters = [];
-          for (let j = 0; j < content_default[i].chapters.length; j++) {
-            if (content_default[i].chapters[j].chapterId) {
-              const chapter = {
-                chapterId: content_default[i].chapters[j].chapterId,
-                sourceManga,
-                langCode: content_default[i].chapters[j].languageCode ? content_default[i].chapters[j].languageCode : "EN",
-                chapNum: content_default[i].chapters[j].chapterNumber ? content_default[i].chapters[j].chapterNumber : j + 1,
-                title: content_default[i].primaryTitle,
-                volume: content_default[i].chapters[j].volumeNumber
-              };
-              chapters.push(chapter);
-            }
+    async makeRequest(query, QueryVariables, search) {
+      const request = {
+        url: GRAPHQL_ENDPOINT,
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: JSON.stringify({
+          query,
+          variables: QueryVariables
+        })
+      };
+      const [_, buffer] = await Application.scheduleRequest(request);
+      const data = Application.arrayBufferToUTF8String(buffer);
+      const json = JSON.parse(data);
+      if (json == void 0) {
+        throw new Error(
+          `Failed to parse JSON for the ${typeof search === void 0 ? "title" : typeof search === "string" ? 'given search "' + search + '"' : "section " + search}: ${json}`
+        );
+      } else if (typeof json === "object" && json != null && "errors" in json && json.errors != null && Array.isArray(json.errors)) {
+        for (const error of json.errors) {
+          if (typeof error === "object" && error != null && "status" in error && error.status != null && "message" in error && error.message != null) {
+            throw new Error(
+              `AniList returned an error: [${error.status}] ${error.message}`
+            );
           }
-          return chapters;
         }
       }
-      throw new Error("No title with this id exists");
-    }
-    // Populates a chapter with images
-    async getChapterDetails(chapter) {
-      for (let i = 0; i < content_default.length; i++) {
-        if (chapter.sourceManga.mangaId == content_default[i].titleId) {
-          for (let j = 0; j < content_default[i].chapters.length; j++) {
-            if (chapter.chapterId == content_default[i].chapters[j].chapterId) {
-              const chapterDetails = {
-                id: chapter.chapterId,
-                mangaId: chapter.sourceManga.mangaId,
-                pages: content_default[i].chapters[j].pages
-              };
-              return chapterDetails;
-            }
-          }
-          throw new Error("No chapter with this id exists");
-        }
-      }
-      throw new Error("No title with this id exists");
+      return json;
     }
   };
-  var ContentTemplate = new ContentTemplateExtension();
+  var AniList = new AniListExtension();
   return __toCommonJS(main_exports);
 })();
 /*! Bundled license information:

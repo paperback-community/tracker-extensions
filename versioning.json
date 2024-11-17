@@ -1,5 +1,5 @@
 {
-  "buildTime": "2024-11-16T18:43:45.636Z",
+  "buildTime": "2024-11-17T00:26:10.966Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.28",
     "types": "1.0.0-alpha.28"
@@ -10,29 +10,25 @@
   },
   "sources": [
     {
-      "name": "Content Template",
-      "description": "Content template extension",
-      "version": "0.9.0",
+      "name": "AniList",
+      "description": "The anilist.co tracker extension.",
+      "version": "2.0.0",
       "icon": "icon.png",
       "language": "English",
       "contentRating": "SAFE",
       "badges": [
         {
-          "label": "Template",
+          "label": "Tracker",
           "textColor": "#FFFFFF",
-          "backgroundColor": "#F64B4B"
-        },
-        {
-          "label": "Content",
-          "textColor": "#FFFFFF",
-          "backgroundColor": "#03C04A"
+          "backgroundColor": "#005ff9"
         }
       ],
       "capabilities": [
         32,
         4,
         64,
-        1
+        2,
+        8
       ],
       "developers": [
         {
@@ -41,7 +37,7 @@
           "github": "https://github.com/Celarye"
         }
       ],
-      "id": "ContentTemplate"
+      "id": "AniList"
     }
   ]
 }
