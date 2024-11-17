@@ -1,22 +1,22 @@
 {
-  "name": "extension-templates",
-  "description": "Extension templates repository for Paperback.",
+  "name": "tracker-extensions",
+  "description": "Paperback extensions for integrating with progress tracking services.",
   "author": "Paperback Community",
   "keywords": [
     "Paperback",
     "extensions",
-    "templates"
+    "trackers"
   ],
   "version": "0.9.0",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/paperback-community/extension-templates.git"
+    "url": "git+https://github.com/paperback-community/tracker-extensions.git"
   },
   "bugs": {
-    "url": "https://github.com/paperback-community/extension-templates/issues"
+    "url": "https://github.com/paperback-community/tracker-extensions/issues"
   },
-  "homepage": "https://github.com/paperback-community/extension-templates#readme",
+  "homepage": "https://github.com/paperback-community/tracker-extensions#readme",
   "private": true,
   "type": "module",
   "scripts": {

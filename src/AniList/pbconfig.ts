@@ -1,21 +1,21 @@
 import { ContentRating, SourceInfo, SourceIntents } from "@paperback/types";
 
 export default {
-  name: "Content Template",
-  description: "Content template extension",
-  version: "0.9.0",
+  name: "AniList",
+  description: "The anilist.co tracker extension.",
+  version: "2.0.0",
   icon: "icon.png",
   language: "English",
   contentRating: ContentRating.EVERYONE,
   badges: [
-    { label: "Template", textColor: "#FFFFFF", backgroundColor: "#F64B4B" },
-    { label: "Content", textColor: "#FFFFFF", backgroundColor: "#03C04A" },
+    { label: "Tracker", textColor: "#FFFFFF", backgroundColor: "#005ff9" },
   ],
   capabilities: [
     SourceIntents.SETTINGS_UI,
     SourceIntents.HOMEPAGE_SECTIONS,
     SourceIntents.MANGA_SEARCH,
-    SourceIntents.MANGA_CHAPTERS,
+    SourceIntents.MANGA_TRACKING,
+    SourceIntents.COLLECTION_MANAGEMENT,
   ],
   developers: [
     {
@@ -24,4 +24,4 @@ export default {
       github: "https://github.com/Celarye",
     },
   ],
-} satisfies SourceInfo;
+} as SourceInfo;
