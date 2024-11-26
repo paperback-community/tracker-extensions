@@ -5,7 +5,7 @@ export default {
   description: "The anilist.co tracker extension.",
   version: "2.0.0",
   icon: "icon.png",
-  language: "English",
+  language: "en",
   contentRating: ContentRating.EVERYONE,
   badges: [
     { label: "Tracker", textColor: "#FFFFFF", backgroundColor: "#005ff9" },
