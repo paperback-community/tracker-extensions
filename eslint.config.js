@@ -29,7 +29,6 @@ export default tseslint.config(
     },
   },
   {
-    // Temporarily ignoring the AniList extension until it gets updated to comply with the ESLint rules
-    ignores: ["bundles", "src/AniList"],
+    ignores: ["bundles"],
   },
 );
