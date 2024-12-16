@@ -1,0 +1,27 @@
+# https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: sunday
+    labels:
+      - chore
+      - dependencies
+    groups:
+      security-updates:
+        applies-to: security-updates
+        update-types:
+          - patch
+          - minor
+          - major
+      minor-patch-updates:
+        update-types:
+          - minor
+          - patch
+      major-pre-release-updates:
+        patterns:
+          - "*"
+
